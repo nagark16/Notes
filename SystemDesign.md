@@ -13,6 +13,11 @@ Load balancing
         user <----> load balancer <---->  instance(n number of instances)   
         when a request reaches a load balancer. the load balancer can forward to any instance (called non-sticky) or it can be forwarded to same instance all the time (called sticky)
 
+    https://stackoverflow.com/questions/10494431/sticky-and-non-sticky-sessions
+    https://www.citrix.com/en-in/glossary/load-balancing.html
+    https://www.nginx.com/resources/glossary/load-balancing/
+    http://michaelnielsen.org/blog/consistent-hashing/
+    
 Message/Task Queue = notification + load balancing + heart beat + persistance
     ex: RabbitMQ, ZeroMQ, JMS(Java Messaging Service)
 
