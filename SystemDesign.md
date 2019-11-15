@@ -76,9 +76,19 @@
 
 
 ### Sharding:
-    * sql opitimzation, indexing, 
-    * distribute data based on columns is called Vertical partitioning    
-    * break data into pieces and allocate to different database servers is called Horizontal partitioning[sharding] - availability, consistency
-        * problems: 1. joins
-                    2. shards are inflexible we can make database servers flexible by having consistent hashing[followed by memcache]
-        * best practices: use index
+* sql opitimzation, indexing, 
+* distribute data based on columns is called Vertical partitioning    
+* break data into pieces and allocate to different database servers is called Horizontal partitioning[sharding] - availability, consistency
+    * problems: 1. joins
+                2. shards are inflexible we can make database servers flexible by having consistent hashing[followed by memcache]
+    * best practices: use index
+* Sharding a database is a common scalability strategy used when designing server side systems. The server side system architecture uses concepts like sharding to make systems more scalable, reliable and performant.
+
+* Sharding is horizontal partitioning of data according to a shard key. This shard key determines which database the entry to be persisted is sent to. Some common strategies for this are reverse proxies.
+
+* Database interviews ask for concepts like sharding to make databases more performant and available. This makes horizontal partitioning a logical choice.
+
+https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6
+https://medium.com/@jeeyoungk/why-i-love-databases-1d4cc433685f
+https://www.quora.com/What-is-the-difference-between-consistent-hashing-and-sharding-in-a-distributed-system
+
